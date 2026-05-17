@@ -34,15 +34,15 @@ textarea{min-height:150px;resize:vertical}input[type="text"]:focus, textarea:foc
 <label style="margin-top:12px">Select Your Teacher &amp; Class</label>
 <input type="hidden" id="teacherName" value="">
 <select id="className" style="width:100%;padding:14px;border:2px solid #e0e0e0;border-radius:12px;font-size:16px;margin-bottom:15px" onchange="setTeacher(this)">
-  <option value="">-- Select your class --</option>
-  <optgroup label="Angela Gradiska">
-    <option value="3096" data-teacher="Angela Gradiska">3096 - Tue/Thu 6:30 PM (Angela)</option>
-    <option value="3100" data-teacher="Angela Gradiska">3100 - Tue/Thu 8:30 PM (Angela)</option>
-  </optgroup>
-  <optgroup label="Jonelle Williams">
-    <option value="3089" data-teacher="Jonelle Williams">3089 - Mon/Wed 6:30 PM (Jonelle)</option>
-    <option value="3092" data-teacher="Jonelle Williams">3092 - Mon/Wed 8:30 PM (Jonelle)</option>
-  </optgroup>
+<option value="">-- Select your class --</option>
+<optgroup label="Angela Gradiska">
+<option value="3096" data-teacher="Angela Gradiska">3096 - Tue/Thu 6:30 PM (Angela)</option>
+<option value="3100" data-teacher="Angela Gradiska">3100 - Tue/Thu 8:30 PM (Angela)</option>
+</optgroup>
+<optgroup label="Jonelle Williams">
+<option value="3089" data-teacher="Jonelle Williams">3089 - Mon/Wed 6:30 PM (Jonelle)</option>
+<option value="3092" data-teacher="Jonelle Williams">3092 - Mon/Wed 8:30 PM (Jonelle)</option>
+</optgroup>
 </select>
 <button class="btn" onclick="startQuiz()">Start Homework →</button><div class="note">This homework only tests content taught in Class 1: workplace greetings, courtesy expressions, and Present Simple vs. Present Continuous.</div></div></div>
 <div class="section" id="s1"><div class="card"><div class="progress"><div class="progress-bar" style="width:20%"></div></div><h2>1. Reading</h2><div class="reading-box"><p><strong>First Day at the Office</strong></p><p>Julia is starting a new job this week. Every morning, she arrives at the office at 8:30 and greets her coworkers politely. She usually says, “Good morning” and asks, “How are you doing today?”</p><p>Today is a little different. She is meeting new team members, so she is introducing herself many times. Right now, she is talking to a new colleague near the front desk. She is also asking polite questions when she needs help.</p><p>Julia thinks workplace courtesy is important because it helps people feel comfortable and respected.</p></div><div id="readingQuestions"></div><button class="btn" onclick="checkS1()">Continue →</button><button class="btn" style="background:#e5e7eb;color:#333;margin-top:8px" onclick="showSection('start')">&larr; Back</button></div></div>
