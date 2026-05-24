@@ -88,26 +88,6 @@ const grammarQBank=[
 {q:"Today, she _____ her first team meeting.",opts:["attends usually","is attending","attend"],correct:1}
 ];
 
-const TEACHER_CLASSES = {
-  'Angela Gradiska': [
-    {value:'3096', label:'Tue/Thu 6:30 PM - 8:00 PM'},
-    {value:'3100', label:'Tue/Thu 8:30 PM - 10:00 PM'},
-  ],
-  'Jonelle Williams': [
-    {value:'3089', label:'Mon/Wed 6:30 PM - 8:00 PM'},
-    {value:'3092', label:'Mon/Wed 8:30 PM - 10:00 PM'},
-  ],
-};
-function updateClasses(){
-  const teacher = document.getElementById('teacherName').value;
-  const clsSel = document.getElementById('className');
-  clsSel.innerHTML = '<option value="">Select your class...</option>';
-  (TEACHER_CLASSES[teacher] || []).forEach(c => {
-    const opt = document.createElement('option');
-    opt.value = c.value; opt.textContent = c.label;
-    clsSel.appendChild(opt);
-  });
-}
 function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
 function showSection(id){document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}
 function startQuiz(){
